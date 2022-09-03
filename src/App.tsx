@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import {IWeather} from "./interface/weatherInterface";
 import Weather from "./components/Weather";
+import './styles/style.css'
 
 function App() {
     const [weather, setWeather] = useState<any>({})
