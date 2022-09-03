@@ -30,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+        <h1>Welcome to my Weather App</h1>
       <Weather weather={weather}/>
     </div>
   );
