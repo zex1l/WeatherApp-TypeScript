@@ -24,7 +24,9 @@ function App() {
                 id: res.id,
                 icon: res.weather[0].icon
             }))
-            .catch(err => setError(true))
+            .catch(err => {
+              setError(true)
+            })
             setLoading(false)
 
     }
