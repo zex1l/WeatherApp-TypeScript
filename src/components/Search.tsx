@@ -3,15 +3,13 @@ import styles from "../styles/App.module.css"
 
 interface SearchProps {
     getData: any,
-    setSubmit: any
 }
 
-const Search:FC <SearchProps> = ({getData, setSubmit}) => {
+const Search:FC <SearchProps> = ({getData}) => {
     const [weather, setWeather] = useState('')
 
     const handlerSubmit = () => {
         getData(weather)
-        setSubmit(true)
         setWeather('')
     }
 
